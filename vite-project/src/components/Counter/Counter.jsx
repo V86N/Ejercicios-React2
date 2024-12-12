@@ -5,10 +5,10 @@ const Counter = (props) => {
     const [count, setCount] = useState(props.initialValue)
 
     const increment = () => {
-        setCount (count + 3)// Para que incremente de 3 en 3
+        setCount (count + props.step)// Para que incremente de 3 en 3
     }
     const decrement = () => {
-        setCount (count - 1)
+        setCount (count - props.step)
     }
   
   
